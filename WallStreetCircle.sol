@@ -19,7 +19,7 @@ contract SimpleCollectible is ERC1155, Ownable {
     string private _baseSuffix;
 
     constructor () ERC1155 ('')  {
-        setBaseURI('ipfs://QmdaXBmTtevw3gGKLrzAaHdPeyDVJ9oiK3SWKdoqd1jufH/');
+        setBaseURI('https://gateway.pinata.cloud/ipfs/QmdaXBmTtevw3gGKLrzAaHdPeyDVJ9oiK3SWKdoqd1jufH/');
         setBaseSuffix('.json');
     }
 
