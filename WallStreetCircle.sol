@@ -19,7 +19,7 @@ contract SimpleCollectible is ERC1155, Ownable {
     string private _baseSuffix;
 
     constructor () ERC1155 ('')  {
-        setBaseURI('ipfs://https://dweb.link/ipfs/QmVYWaxKQu8YRcUvJTeVEsxP11HkvzxzyswKq9nxBdGZUz/');
+        setBaseURI('ipfs://QmVYWaxKQu8YRcUvJTeVEsxP11HkvzxzyswKq9nxBdGZUz/');
         setBaseSuffix('.json');
     }
 
