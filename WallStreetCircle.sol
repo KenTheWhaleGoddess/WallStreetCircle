@@ -5,11 +5,6 @@ import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-interface YieldToken {
-    function updateReward(address _address, address _address2) external;
-    function getReward(address _address) external;
-}
-
 contract SimpleCollectible is ERC1155, Ownable {
     uint256 public tokenCounter;
     address public os = 0x495f947276749Ce646f68AC8c248420045cb7b5e;
